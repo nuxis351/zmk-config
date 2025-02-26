@@ -20,4 +20,4 @@
 ---
 include:
   - board: adafruit_kb2040
-    shield: boardsource3x4
+    shield: 3x3pad
