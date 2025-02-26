@@ -1,0 +1,10 @@
+file_format: "1"
+id: 3x3pad
+name: 3x3Pad
+type: shield
+url: https://github.com/nuxis351/zmk-config
+requires: [adafruit_kb2040]
+exposes: []
+features:
+  - keys
+  - encoder
