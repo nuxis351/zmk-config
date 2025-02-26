@@ -1,6 +1,6 @@
 if SHIELD_3X3PAD
 
-config ZMK_KEYBOARD_3X3PAD
-    default "MyKeyboard"
+config ZMK_KEYBOARD_NAME
+    default "3x3pad"
 
 endif
