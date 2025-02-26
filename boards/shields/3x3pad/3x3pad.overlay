@@ -9,13 +9,6 @@
         zmk,physical-layout = &physical_layout0;
     };
 
-    kscan0: kscan_composite {
-        compatible = "zmk,kscan-composite";
-        rows = <5>;
-        cols = <4>;
-
-    };
-
     kscan1: kscan_matrix {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
