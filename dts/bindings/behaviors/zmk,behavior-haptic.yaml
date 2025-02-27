@@ -1,0 +1,17 @@
+description: Simple behavior that pulses a GPIO pin for haptics on keypress
+
+compatible: "zmk,behavior-haptic"
+
+include: zero_param.yaml
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: GPIO pin to drive haptic motor
+
+  pulse-ms:
+    type: int
+    required: false
+    default: 50
+    description: Duration (ms) to pulse the motor on each keypress

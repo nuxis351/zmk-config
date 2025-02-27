@@ -1,0 +1,13 @@
+#include <dt-bindings/zmk/behaviors.h>
+
+/ {
+    behaviors {
+        /omit-if-no-ref/ haptic: haptic {
+            compatible = "zmk,behavior-haptic";
+            #binding-cells = <0>;
+
+            gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
+            pulse-ms = <50>;
+        };
+    };
+};
