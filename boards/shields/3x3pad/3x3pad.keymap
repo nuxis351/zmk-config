@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors/macros.dtsi>
+#include <behaviors/key_press.dtsi>
 
 / {
     macros {
@@ -10,7 +11,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
-                = <&haptic>
+                = <&macro_tap &haptic>
                 , <&macro_param_1to1>
                 , <&kp 0>
                 ;
