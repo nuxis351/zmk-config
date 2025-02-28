@@ -11,7 +11,7 @@
             bindings
                 = <&macro_tap &haptic>
                 , <&macro_param_1to1>
-                , <&macro_press &kp MACRO_PLACEHOLDER>
+                , <&kp MACRO_PLACEHOLDER>
                 ;
         };
     };
