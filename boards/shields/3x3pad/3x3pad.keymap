@@ -9,7 +9,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
-                = <&macro_tap &haptic>
+                = <&haptic>
                 , <&macro_param_1to1>
                 , <&kp 0>
                 ;
