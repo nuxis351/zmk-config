@@ -10,7 +10,7 @@
             tap-ms = <0>;
             bindings
                 = <&macro_tap &haptic>
-                , <macro_param_1to1>
+                , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>;
         };
     };
