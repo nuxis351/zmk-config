@@ -11,8 +11,8 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &haptic    &kp Z    &kp M
-                           &kp A
+                &haptic &kp Z    &haptic &kp M
+                &haptic &kp A
             >;
         };
     };
