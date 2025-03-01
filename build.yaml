@@ -21,3 +21,4 @@
 include:
   - board: adafruit_kb2040
     shield: 3x3pad
+    snippet: zmk-usb-logging
