@@ -13,6 +13,6 @@ manifest:
       import: app/west.yml
     - name: zmk-behavior-haptic
       remote: nuxis351
-      revision: main
+      revision: blinky
   self:
     path: config
