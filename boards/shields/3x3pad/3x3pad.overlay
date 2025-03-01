@@ -44,4 +44,25 @@
             >;
     };
 
+     encoder_wheel: encoder_wheel {
+        compatible = "alps,ec11";
+        /* Replace PIN_A and PIN_B with your actual pin numbers.
+           Here, we assume the encoder A is on pin 12 and B is on pin 13 of gpio0.
+           Adjust the GPIO flags (e.g., GPIO_ACTIVE_HIGH | GPIO_PULL_UP) as needed. */
+        a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;  /* Number of pulses per rotation from the datasheet */
+        status = "disabled";  /* Initially disabled */
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_wheel>;
+        triggers-per-rotation = <20>;
+    };
+
+    &encoder_wheel {
+        status = "okay";
+    }
+
 };

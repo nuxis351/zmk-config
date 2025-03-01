@@ -20,6 +20,8 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
             // -------------------------------------
             // |     Z     |     M     |     K     |
             // |     A     |     B     |     C     |
