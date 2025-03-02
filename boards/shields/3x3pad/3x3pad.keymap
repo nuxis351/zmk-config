@@ -15,23 +15,17 @@
                 , <&kp 0>
                 ;
         };
-        bt_simp: bt_simp {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_param_1to1 0>
-                , <&macro_tap &bt MACRO_PLACEHOLDER>
-                ;
-        };
-    };
 
-    behaviors {
-        ht_bt: behavior_hold_tap_bluetooth {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&bt_simp>, <&bt_simp>;
+        bt_next_ez: bt_next_ez {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_NXT>;
+        };
+
+        bt_clear_ez: bt_clear_ez {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_CLR>;
         };
     };
 
@@ -47,7 +41,7 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &haptic_key Z    &haptic_key M
-                &ht_bt BT_NXT BT_CLR
+                &ht_tp &bt_clear_ez &bt_next_ez
             >;
         };
     };
