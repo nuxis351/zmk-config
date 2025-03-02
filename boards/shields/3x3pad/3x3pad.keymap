@@ -39,7 +39,7 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &haptic_key Z    &haptic_key M
-                &ht_bt BT_NXT BT_CLR
+                &haptic_key A
             >;
         };
     };
