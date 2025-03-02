@@ -4,7 +4,7 @@
 
 / {
     behaviors {
-        htbt: hold_tap {
+        ht_bt: behavior_hold_tap_bluetooth {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -39,7 +39,7 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &haptic_key Z    &haptic_key M
-                &htbt BT_NXT BT_CLR
+                &ht_bt BT_NXT BT_CLR
             >;
         };
     };
