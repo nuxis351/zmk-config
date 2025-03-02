@@ -3,17 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    behaviors {
-        ht_bt: behavior_hold_tap_bluetooth {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&bt_simp>, <&bt_simp>;
-        };
-    };
-
-    macros {
+     macros {
         haptic_key: haptic_key {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -25,13 +15,23 @@
                 , <&kp 0>
                 ;
         };
-        bt_simp: bluetooth_simple {
+        bt_simp: bt_simp {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
                 = <&macro_param_1to1>
                 , <&macro_tap &bt MACRO_PLACEHOLDER>
                 ;
+        };
+    };
+
+    behaviors {
+        ht_bt: behavior_hold_tap_bluetooth {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&bt_simp>, <&bt_simp>;
         };
     };
 
