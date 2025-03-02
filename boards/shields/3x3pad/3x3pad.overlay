@@ -52,17 +52,13 @@
         a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;  /* Number of pulses per rotation from the datasheet */
-        status = "disabled";  /* Initially disabled */
+        status = "okay";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_wheel>;
         triggers-per-rotation = <20>;
-    };
-
-    &encoder_wheel {
-        status = "okay";
     };
 
 };
