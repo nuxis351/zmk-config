@@ -30,7 +30,7 @@
             #binding-cells = <1>;
             bindings
                 = <&macro_param_1to1>
-                , <&bt 0>
+                , <&macro_tap &bt MACRO_PLACEHOLDER>
                 ;
         };
     };
