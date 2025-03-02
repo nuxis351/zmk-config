@@ -28,11 +28,9 @@
         bt_simp: bluetooth_simple {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            wait-ms = <0>;
-            tap-ms = <0>;
             bindings
                 = <&macro_param_1to1>
-                , <&macro_tap &bt 0>
+                , <&bt 0>
                 ;
         };
     };
