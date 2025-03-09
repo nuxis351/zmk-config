@@ -19,6 +19,6 @@
 #
 ---
 include:
-  - board: adafruit_kb2040
+  - board: nice_nano_v2
     shield: 3x3pad
     snippet: zmk-usb-logging
