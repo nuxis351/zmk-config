@@ -17,7 +17,7 @@
             #binding-cells = <0>;
 
             gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
-            pulse-ms = <200>;
+            pulse-ms = <500>;
         };
     };
 
