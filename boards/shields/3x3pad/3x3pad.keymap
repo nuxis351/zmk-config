@@ -37,6 +37,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        haptic: haptic {
+            compatible = "zmk,behavior-haptic";
+            #binding-cells = <0>;
+
+            gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+            pulse-ms = <100>;
+        };
     };
 
     keymap {
