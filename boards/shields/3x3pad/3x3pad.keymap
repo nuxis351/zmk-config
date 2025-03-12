@@ -37,13 +37,13 @@
         bt_next_ez: bt_next_ez {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_NXT>;
+            bindings = <&macro_press &bt BT_NXT>;
         };
 
         bt_clear_ez: bt_clear_ez {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_CLR>;
+            bindings = <&macro_press &bt BT_CLR>;
         };
     };
 
