@@ -4,11 +4,12 @@
 
 / {
     behaviors {
-        ht_tp: hold_tap_tap_preferred {
+        bt_ht_tp: hold_tap_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            bindings = <&bt_clear_ez>, <&bt_next_ez>;
         };
 
         haptic1: haptic1 {
@@ -58,7 +59,7 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &haptic_key Z    &haptic_key M
-                &ht_tp &bt_clear_ez &bt_next_ez
+                &bt_ht_tp
             >;
         };
     };
