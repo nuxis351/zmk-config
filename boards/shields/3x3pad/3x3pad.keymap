@@ -59,7 +59,7 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &haptic_key Z    &haptic_key M
-                &bt_ht_tp
+                &bt_ht_tp 0 0
             >;
         };
     };
